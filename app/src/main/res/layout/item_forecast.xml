@@ -8,21 +8,52 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/forecastItemHolder"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/mtrl_card_spacing">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="200dp"
+        app:cardBackgroundColor="@color/colorPrimary">
 
-        <TextView
-            android:id="@+id/degrees"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:gravity="center">
 
-        <TextView
-            android:id="@+id/day"
-            style="@style/BlueText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="64dp"
-            android:text="TextView" />
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/day" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:src="@drawable/cloud" />
+
+            <TextView
+                android:id="@+id/maxTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/maxTemp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/minTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/minTemp"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
     </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

@@ -13,4 +13,7 @@
     <string name="sunrise">Vzhod</string>
     <string name="sunset">Zahod</string>
     <string name="location">Kraj</string>
+    <string name="day">Dan</string>
+    <string name="maxTemp">Max</string>
+    <string name="minTemp">Min</string>
 </resources>
